@@ -26,11 +26,16 @@
 	exit; // Exit if accessed directly.
 }
 
-// Include the class responsible for enqueuing assets
-require_once plugin_dir_path(__FILE__) . 'makoh-assets.php';
+//define constants
+// Define constants
+define( 'MAKOH_SLIDER_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'MAKOH_SLIDER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
-//initialize the assets
-new Makoh_Slider_Assets();
+// Include the class responsible for enqueuing assets
+require_once MAKOH_SLIDER_PLUGIN_DIR . 'classess/makoh-assets.php';
+// Include shortcode handler
+require_once MAKOH_SLIDER_PLUGIN_DIR . 'includes/slider-shortcode.php';
+
 
 
 

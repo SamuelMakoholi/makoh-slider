@@ -2872,6 +2872,7 @@ input.main-search-input::placeholder {
   color: var(--white);
   opacity: 90%;
 }
+
 .banner__slider .slide-bg {
   position: absolute;
   left: 0;
